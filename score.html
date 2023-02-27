@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>score</title>
+</head>
+
+<body>
+    <script>
+        // the student names and scores arrays
+        let studentNames = ["Usama", "Khizer", "Shahzaib"];
+        let studentScores = [430, 380, 440];
+
+        // Calculate the percentages
+        let percentages = studentScores.map(score => (score / 500 * 100));
+
+        // scores and percentages
+        for (let i = 0; i < studentNames.length; i++) {
+            console.log(`${studentNames[i]} scored ${studentScores[i]} marks, which is ${percentages[i].toFixed(2)}% of the total marks.`);
+        }
+    </script>
+</body>
+
+</html>
